@@ -1,0 +1,1 @@
+document.title += " - " + document.getElementById("main-").children[0].innerHTML;
