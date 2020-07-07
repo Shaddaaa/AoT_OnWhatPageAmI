@@ -1,5 +1,4 @@
-if (document.getElementById("farmingpage")) {
-	document.title += " - " + document.getElementById("main-").children[0].children[0].innerHTML;
-} else {
-	document.title += " - " + document.getElementById("main-").children[0].innerHTML;
-}
+let ShaddasOnWhatPageAmI = {};
+ShaddasOnWhatPageAmI.text = window.location.href.replace("https://ageoftrades.com/game/", "");
+ShaddasOnWhatPageAmI.text = ShaddasOnWhatPageAmI.text.charAt(0).toUpperCase() + ShaddasOnWhatPageAmI.text.slice(1);
+document.title += " - " + ShaddasOnWhatPageAmI.text;
