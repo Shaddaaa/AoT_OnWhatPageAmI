@@ -1,6 +1,6 @@
 let ShaddasOnWhatPageAmI = {};
 ShaddasOnWhatPageAmI.text = window.location.href.replace("https://ageoftrades.com/game", "");
-ShaddasOnWhatPageAmI.text = ShaddasOnWhatPageAmI.text.replaceAll("/", " - ");
+ShaddasOnWhatPageAmI.text = ShaddasOnWhatPageAmI.text.replace(/\//g, " - ");
 if (ShaddasOnWhatPageAmI.text.indexOf("mods - ")!=-1) {
 	ShaddasOnWhatPageAmI.text = " - " + document.getElementById("main-").children[0].innerHTML;
 } else {
